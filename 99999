@@ -35,3 +35,8 @@
 : 1639669058:0;history
 : 1639669062:0;clear
 : 1639669141:0;git add .
+: 1639669155:0;git commit -m "Install django rest framework"
+: 1639669326:0;pipenv shell
+: 1639681132:0;clear
+: 1639681384:0;python manage.py runserver
+: 1639685049:0;git add .
