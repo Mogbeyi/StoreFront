@@ -1,0 +1,29 @@
+: 1639666968:0;clear
+: 1639666968:0;ls
+: 1639666974:0;pipenv install
+: 1639667015:0;pipenv shell
+: 1639667020:0;clear
+: 1639667029:0;python manage.py migrate
+: 1639667227:0;clear
+: 1639667234:0;python manage.py runserver
+: 1639667379:0;clear
+: 1639667381:0;ls -a
+: 1639667385:0;clear
+: 1639667386:0;ls
+: 1639667400:0;python manage.py createsuperuser
+: 1639667482:0;python manage.py runserver
+: 1639667561:0;clear
+: 1639667657:0;ls
+: 1639667660:0;cd ..
+: 1639667691:0;ls
+: 1639667692:0;clear
+: 1639667693:0;ls
+: 1639667699:0;git init
+: 1639667703:0;ls -a
+: 1639667718:0;touch .gitignore
+: 1639667730:0;code .gitignore
+: 1639667746:0;cd ..
+: 1639667800:0;ls
+: 1639667801:0;clear
+: 1639667802:0;ls
+: 1639667810:0;git add .
