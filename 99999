@@ -45,3 +45,6 @@
 : 1639687145:0;python manage.py runserver
 : 1639689588:0;git log --oneline
 : 1639689597:0;git add .
+: 1639689610:0;git commit -m "Create product and collection serializer"
+: 1639690390:0;python manage.py runserver
+: 1639693250:0;git add .

@@ -4,11 +4,15 @@ from rest_framework.response import Response
 from .serializers import ProductSerializer
 from .models import Product
 
-@api_view()
+@api_view(['GET', 'POST'])
 def product_list(request):
-    queryset = Product.objects.select_related('collection').all()
-    serializer = ProductSerializer(queryset, many=True)
-    return Response(serializer.data)
+    if request.method == 'GET':
+        queryset = Product.objects.select_related('collection').all()
+        serializer = ProductSerializer(queryset, many=True)
+        return Response(serializer.data)
+    elif request.method == 'POST':
+        serializer = ProductSerializer(data=request.data)
+        return Response('ok')
 
 @api_view()
 def product_detail(request, id):
