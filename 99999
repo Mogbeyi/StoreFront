@@ -40,3 +40,8 @@
 : 1639681132:0;clear
 : 1639681384:0;python manage.py runserver
 : 1639685049:0;git add .
+: 1639685054:0;git commit 
+: 1639685089:0;clear
+: 1639687145:0;python manage.py runserver
+: 1639689588:0;git log --oneline
+: 1639689597:0;git add .
