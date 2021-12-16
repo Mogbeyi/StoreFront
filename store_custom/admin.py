@@ -6,7 +6,7 @@ from tags.models import TaggedItem
 
 
 class TagInline(GenericTabularInline):
-    autocomplete_fields = ['tag']
+    autocomplete_fields = ["tag"]
     model = TaggedItem
 
 

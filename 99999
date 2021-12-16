@@ -48,3 +48,8 @@
 : 1639689610:0;git commit -m "Create product and collection serializer"
 : 1639690390:0;python manage.py runserver
 : 1639693250:0;git add .
+: 1639693271:0;git commit -m "Desearilize post objects"
+: 1639693274:0;clear
+: 1639693274:0;ls
+: 1639693276:0;cd ..
+: 1639693312:0;git add .
