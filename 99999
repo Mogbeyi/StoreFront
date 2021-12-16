@@ -27,3 +27,11 @@
 : 1639667801:0;clear
 : 1639667802:0;ls
 : 1639667810:0;git add .
+: 1639667820:0;git commit -m "Initialize project"
+: 1639667822:0;clear
+: 1639668915:0;ls
+: 1639668936:0;pipenv install djangorestframework
+: 1639668980:0;clear
+: 1639669058:0;history
+: 1639669062:0;clear
+: 1639669141:0;git add .
