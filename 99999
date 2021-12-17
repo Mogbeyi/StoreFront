@@ -53,3 +53,9 @@
 : 1639693274:0;ls
 : 1639693276:0;cd ..
 : 1639693312:0;git add .
+: 1639693326:0;git commit -m "Format code base"
+: 1639693329:0;clear
+: 1639769136:0;ls
+: 1639769146:0;python manage.py runserver
+: 1639769318:0;git diff
+: 1639769323:0;git add .
