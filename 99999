@@ -59,3 +59,9 @@
 : 1639769146:0;python manage.py runserver
 : 1639769318:0;git diff
 : 1639769323:0;git add .
+: 1639769333:0;git commit -m "Validate product request"
+: 1639821048:0;python manage.py runserver
+: 1639821906:0;git log --oneline
+: 1639821915:0;clear
+: 1639821917:0;git diff
+: 1639821933:0;git add .
