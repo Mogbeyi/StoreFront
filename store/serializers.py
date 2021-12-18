@@ -12,7 +12,16 @@ class CollectionSerializer(serializers.ModelSerializer):
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ["id", "title", "slug", "inventory", "unit_price", "price_with_tax", "collection", "description"]
+        fields = [
+            "id",
+            "title",
+            "slug",
+            "inventory",
+            "unit_price",
+            "price_with_tax",
+            "collection",
+            "description",
+        ]
 
     price_with_tax = serializers.SerializerMethodField(
         method_name="calculate_tax", source="unit_price"

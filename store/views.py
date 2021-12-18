@@ -19,7 +19,6 @@ def product_list(request):
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
-
 @api_view(["GET", "PUT"])
 def product_detail(request, id):
     product = get_object_or_404(Product, pk=id)

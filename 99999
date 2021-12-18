@@ -65,3 +65,8 @@
 : 1639821915:0;clear
 : 1639821917:0;git diff
 : 1639821933:0;git add .
+: 1639821948:0;git commit -m "Implement post and update methods"
+: 1639821950:0;clear
+: 1639821951:0;ls
+: 1639821956:0;black .
+: 1639821977:0;git add .
