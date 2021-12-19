@@ -70,3 +70,21 @@
 : 1639821951:0;ls
 : 1639821956:0;black .
 : 1639821977:0;git add .
+: 1639821987:0;git commit -m "Format code base"
+: 1639899106:0;python manage.py runserver
+: 1639901494:0;python -u manage.py runserver
+: 1639901656:0;clear
+: 1639901663:0;python manage.py runserver
+: 1639902195:0;clear
+: 1639902197:0;ls
+: 1639902202:0;python manage.py migrate
+: 1639902250:0;python manage.py makemigrations
+: 1639902280:0;python manage.py migrate
+: 1639902283:0;clear
+: 1639902464:0;python manage.py migrate
+: 1639903473:0;clear
+: 1639903489:0;python manage.py runserver
+: 1639952335:0;clear
+: 1639952339:0;ls
+: 1639952350:0;black .
+: 1639952384:0;git add .
