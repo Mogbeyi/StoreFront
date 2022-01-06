@@ -1,38 +1,41 @@
 from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+from rest_framework.views import APIView
 from .serializers import CollectionSerializer, ProductSerializer
 from .models import Collection, Product
 from rest_framework import status
 from django.db.models import Count
 
+class ProductList(APIView):
 
-@api_view(["GET", "POST"])
-def product_list(request):
-    if request.method == "GET":
+    def get(self, request):
         queryset = Product.objects.select_related("collection").all()
         serializer = ProductSerializer(queryset, many=True)
         return Response(serializer.data)
-    elif request.method == "POST":
+
+    def post(self, request):
         serializer = ProductSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
 
 
-@api_view(["GET", "PUT", "DELETE"])
-def product_detail(request, id):
-    product = get_object_or_404(Product, pk=id)
+class ProductDetail(APIView):
 
-    if request.method == "GET":
+    def get(self, request, id):
+        product = get_object_or_404(Product, pk=id)
         serializer = ProductSerializer(product)
         return Response(serializer.data)
-    elif request.method == "PUT":
+
+    def put(self, request, id):
+        product = get_object_or_404(Product, pk=id)
         serializer = ProductSerializer(product, data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        return Response(serializer.data)
-    elif request.method == "DELETE":
+
+    def delete(self, request, id):
+        product = get_object_or_404(Product, pk=id)
         if product.orderitems.count() > 0:
             return Response(
                 {
@@ -42,8 +45,7 @@ def product_detail(request, id):
             )
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
-
-
+ 
 @api_view(["GET", "POST"])
 def collection_list(request):
     if request.method == "GET":
