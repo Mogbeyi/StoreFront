@@ -115,3 +115,13 @@
 : 1641832438:0;clear
 : 1641912418:0;python manage.py runserver
 : 1641913210:0;git add .
+: 1641913234:0;git commit -m "Use generic api views"
+: 1641915183:0;cd ~
+: 1641920354:0;ls
+: 1641920356:0;clear
+: 1641921111:0;python manage.py runservwer
+: 1641921116:0;python manage.py runserver
+: 1641925099:0;ls
+: 1641925107:0;black .
+: 1641925230:0;ls
+: 1641925233:0;git add .
