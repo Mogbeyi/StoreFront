@@ -109,3 +109,9 @@
 : 1641486427:0;ls
 : 1641486432:0;python manage.py runserver
 : 1641486543:0;git add .
+: 1641486563:0;git commit -m "Change product list from function to class based views"
+: 1641486565:0;clear
+: 1641832433:0;git log --oneline
+: 1641832438:0;clear
+: 1641912418:0;python manage.py runserver
+: 1641913210:0;git add .
