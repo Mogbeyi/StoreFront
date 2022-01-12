@@ -142,3 +142,8 @@
 : 1641992147:0;clear
 : 1641992151:0;python manage.py runserver
 : 1641999987:0;git add .
+: 1642000000:0;git log --oneline
+: 1642000032:0;git commit -m "Create product endpoint using view set"
+: 1642000033:0;clear
+: 1642000061:0;python manage.py runserver
+: 1642001417:0;git add .

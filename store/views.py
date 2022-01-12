@@ -30,8 +30,8 @@ class CollectionViewSet(ModelViewSet):
     serializer_class = CollectionSerializer
 
 
-    def delete(self, request, pk):
-        collection = get_object_or_404(Collection, pk=pk)
+    def destroy(self, request, *args, **kwargs):
+        collection = get_object_or_404(Collection, pk=kwargs['pk'])
 
         if collection.products.count() > 0:
             return Response(
@@ -40,5 +40,5 @@ class CollectionViewSet(ModelViewSet):
                 },
                 status=status.HTTP_405_METHOD_NOT_ALLOWED,
             )
-        collection.delete()
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        
+        return super().destroy(request, *args, **kwargs)
