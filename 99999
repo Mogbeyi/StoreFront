@@ -125,3 +125,20 @@
 : 1641925107:0;black .
 : 1641925230:0;ls
 : 1641925233:0;git add .
+: 1641925250:0;git commit -m "Create collection detail using generic view"
+: 1641929635:0;cd ~
+: 1641990343:0;clea
+: 1641990344:0;clear
+: 1641990348:0;pipenv shell
+: 1641990360:0;clear
+: 1641990534:0;python manage.py runserver
+: 1641990551:0;clear
+: 1641990554:0;python manage.py runserver
+: 1641992076:0;cd "/Users/emmywonder/programming/django/mosh/storefront/store"
+: 1641992104:0;source /Users/emmywonder/.local/share/virtualenvs/storefront-K2vYr3Hj/bin/activate
+: 1641992119:0;clear
+: 1641992120:0;ls
+: 1641992129:0;python manage.py runserver
+: 1641992147:0;clear
+: 1641992151:0;python manage.py runserver
+: 1641999987:0;git add .
