@@ -169,3 +169,6 @@
 : 1642086611:0;clear
 : 1642086617:0;python manage.py runserver
 : 1642087698:0;git add .
+: 1642087723:0;git commit -m "Get product id for review from url"
+: 1642088541:0;python manage.py runserver
+: 1642088763:0;git add .

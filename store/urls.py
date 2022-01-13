@@ -5,7 +5,7 @@ from . import views
 router = routers.DefaultRouter()
 
 #parent routers
-router.register('products', views.ProductViewSet)
+router.register('products', views.ProductViewSet, basename='products')
 router.register('collections', views.CollectionViewSet)
 
 #child routers
