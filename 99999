@@ -189,3 +189,7 @@
 : 1642091628:0;git add .
 : 1642091645:0;git commit -m "Implement search functionality"
 : 1642091899:0;git commit -am "Implement sorting functionality"
+: 1642094438:0;/var/folders/5s/1sd19qmj1w73f5h8kdkpswp80000gn/T/TemporaryItems/(A Document Being Saved By screencaptureui)/Screenshot 2022-01-13 at 18.18.38.png
+: 1642094447:0;CLEAR
+: 1642094468:0;python manage.py runserver
+: 1642095190:0;git add .
