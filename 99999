@@ -172,3 +172,11 @@
 : 1642087723:0;git commit -m "Get product id for review from url"
 : 1642088541:0;python manage.py runserver
 : 1642088763:0;git add .
+: 1642088783:0;git commit -m "Implement filtering by query parameters"
+: 1642088785:0;clear
+: 1642089193:0;ls
+: 1642089201:0;pipenv install django-filter
+: 1642090225:0;python manage.py runserver
+: 1642091060:0;clear
+: 1642091071:0;python manage.py runserver
+: 1642091206:0;git add .
