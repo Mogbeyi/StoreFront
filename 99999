@@ -165,3 +165,7 @@
 : 1642086311:0;python manage.py runserver
 : 1642086592:0;git log --oneline
 : 1642086597:0;git add .
+: 1642086610:0;git commit -m "Create reviews end point"
+: 1642086611:0;clear
+: 1642086617:0;python manage.py runserver
+: 1642087698:0;git add .
