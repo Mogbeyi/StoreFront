@@ -187,3 +187,5 @@
 : 1642091625:0;ls
 : 1642091626:0;clear
 : 1642091628:0;git add .
+: 1642091645:0;git commit -m "Implement search functionality"
+: 1642091899:0;git commit -am "Implement sorting functionality"
