@@ -147,3 +147,21 @@
 : 1642000033:0;clear
 : 1642000061:0;python manage.py runserver
 : 1642001417:0;git add .
+: 1642001449:0;git commit -m "Implement destroy method for collection view set"
+: 1642001450:0;clear
+: 1642001804:0;ls
+: 1642001809:0;python manage.py makemigrations
+: 1642001854:0;python manage.py migrate
+: 1642002707:0;pipenv install drf-nested-routers
+: 1642030494:0;clear
+: 1642030497:0;history
+: 1642030500:0;clear
+: 1642086017:0;ls
+: 1642086022:0;python manage.py runserver
+: 1642086247:0;python manage.py makemigrations
+: 1642086262:0;python manage.py runmigrations
+: 1642086272:0;python manage.py run migrations
+: 1642086278:0;python manage.py migrate
+: 1642086311:0;python manage.py runserver
+: 1642086592:0;git log --oneline
+: 1642086597:0;git add .
