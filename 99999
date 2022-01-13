@@ -180,3 +180,10 @@
 : 1642091060:0;clear
 : 1642091071:0;python manage.py runserver
 : 1642091206:0;git add .
+: 1642091215:0;git commit -m "Implement generic filtering"
+: 1642091406:0;ls
+: 1642091409:0;black .
+: 1642091561:0;python manage.py runserver
+: 1642091625:0;ls
+: 1642091626:0;clear
+: 1642091628:0;git add .
