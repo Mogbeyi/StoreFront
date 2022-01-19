@@ -5,12 +5,17 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework.filters import SearchFilter, OrderingFilter
-from rest_framework.mixins import CreateModelMixin
+from rest_framework.mixins import CreateModelMixin, RetrieveModelMixin
 from .pagination import DefaultPagination
 
 from .filters import ProductFilter
 from .models import Collection, OrderItem, Product, Review, Cart
-from .serializers import CollectionSerializer, ProductSerializer, ReviewSerializer, CartSerializer
+from .serializers import (
+    CollectionSerializer,
+    ProductSerializer,
+    ReviewSerializer,
+    CartSerializer,
+)
 
 
 class ProductViewSet(ModelViewSet):
@@ -18,9 +23,9 @@ class ProductViewSet(ModelViewSet):
     serializer_class = ProductSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter, OrderingFilter]
     filterset_class = ProductFilter
-    search_fields = ['title', 'description']
-    ordering_fields = ['unit_price', 'last_update']
-    pagination_class = DefaultPagination 
+    search_fields = ["title", "description"]
+    ordering_fields = ["unit_price", "last_update"]
+    pagination_class = DefaultPagination
 
     def get_serializer_context(self):
         return {"request": self.request}
@@ -66,6 +71,7 @@ class ReviewViewSet(ModelViewSet):
     def get_serializer_context(self):
         return {"product_id": self.kwargs["product_pk"]}
 
-class CartViewSet(CreateModelMixin, GenericViewSet):
-    queryset = Cart.objects.all()
+
+class CartViewSet(CreateModelMixin, RetrieveModelMixin, GenericViewSet):
+    queryset = Cart.objects.prefetch_related("items__product").all()
     serializer_class = CartSerializer

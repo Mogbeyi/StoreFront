@@ -222,3 +222,8 @@
 : 1642602916:0;git diff
 : 1642602923:0;clear
 : 1642602925:0;git add .
+: 1642602945:0;git commit -m "Implement create cart functionality"
+: 1642614198:0;python manage.py runserver
+: 1642631944:0;ls
+: 1642632271:0;black .
+: 1642632305:0;git add .
