@@ -227,3 +227,9 @@
 : 1642631944:0;ls
 : 1642632271:0;black .
 : 1642632305:0;git add .
+: 1642632325:0;git commit -m "Implement add item to cart functionality"
+: 1642632328:0;git push
+: 1642632329:0;clear
+: 1642632478:0;python manage.py runserver
+: 1642632563:0;ls
+: 1642632565:0;git add .
