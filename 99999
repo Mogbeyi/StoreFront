@@ -193,3 +193,32 @@
 : 1642094447:0;CLEAR
 : 1642094468:0;python manage.py runserver
 : 1642095190:0;git add .
+: 1642095208:0;git commit -m "Implement pagination for product class"
+: 1642095210:0;clear
+: 1642162961:0;ls
+: 1642162964:0;cd ../../..
+: 1642168258:0;python manage.py makemigrations
+: 1642419091:0;clear
+: 1642419097:0;git log --oneline
+: 1642419101:0;clear
+: 1642419117:0;git log --oneline
+: 1642419138:0;clear
+: 1642597799:0;ls
+: 1642598088:0;clear
+: 1642598092:0;pipenv shell
+: 1642598098:0;clear
+: 1642598103:0;ls
+: 1642598323:0;git log --oneline
+: 1642598326:0;clear
+: 1642602341:0;python manage.py runserver
+: 1642602683:0;clear
+: 1642602694:0;python manage.py makemigrations
+: 1642602703:0;python manage.py runmigrations
+: 1642602711:0;python manage.py migrate
+: 1642602732:0;python manage.py makemigrations
+: 1642602756:0;python manage.py runserver
+: 1642602908:0;ls
+: 1642602911:0;git status -s
+: 1642602916:0;git diff
+: 1642602923:0;clear
+: 1642602925:0;git add .
