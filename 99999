@@ -250,3 +250,11 @@
 : 1642776535:0;ls
 : 1642776539:0;clear
 : 1642776542:0;git add .
+: 1642776572:0;git commit -m "Implement getting cart items feature"
+: 1642776579:0;ls
+: 1642776581:0;black .
+: 1642789418:0;python
+: 1642789808:0;clear
+: 1642790453:0;python manage.py runserver
+: 1642892124:0;ls
+: 1642892127:0;git add .
