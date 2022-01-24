@@ -282,3 +282,12 @@
 : 1643022381:0;python manage.py createsuperuser
 : 1643022429:0;python manage.py runserver
 : 1643023522:0;git add .
+: 1643023555:0;git commit -m "Extend the user model"
+: 1643023558:0;clear
+: 1643023835:0;python manage.py runserver
+: 1643024067:0;python manage.py makemigrations
+: 1643024080:0;clear
+: 1643024085:0;python manage.py makemigrations
+: 1643024154:0;python manage.py migrate
+: 1643024404:0;python manage.py runserver
+: 1643024608:0;git add .
