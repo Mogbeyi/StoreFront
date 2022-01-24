@@ -291,3 +291,10 @@
 : 1643024154:0;python manage.py migrate
 : 1643024404:0;python manage.py runserver
 : 1643024608:0;git add .
+: 1643024617:0;git commit -m "Create user profile"
+: 1643032329:0;git diff
+: 1643032332:0;clear
+: 1643032642:0;python manage.py makemigrations
+: 1643032647:0;python manage.py migrate
+: 1643032707:0;python manage.py runserver
+: 1643032782:0;git add .
