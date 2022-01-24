@@ -262,3 +262,23 @@
 : 1642892149:0;git commit -m "Implement feature for adding items to a cart"
 : 1642892151:0;clear
 : 1642892547:0;git add .
+: 1642892566:0;git commit -m "Implement feature for updating a cart item"
+: 1642892772:0;git log --oneline
+: 1642892811:0;git commit --amend -m "Implement feature for updating and deleting a cart"\
+
+: 1642892818:0;git log --oneline
+: 1643005495:0;python manage.py runserver
+: 1643005882:0;ls
+: 1643005883:0;clear
+: 1643005888:0;python manage.py makemigrations
+: 1643005901:0;clear
+: 1643005909:0;python manage.py makemigrations
+: 1643005924:0;pyhon manage.py migrate
+: 1643005933:0;python manage.py migrate
+: 1643022229:0;python manage.py runserver
+: 1643022254:0;python manage.py migrate
+: 1643022260:0;clear
+: 1643022333:0;python manage.py runserver
+: 1643022381:0;python manage.py createsuperuser
+: 1643022429:0;python manage.py runserver
+: 1643023522:0;git add .
