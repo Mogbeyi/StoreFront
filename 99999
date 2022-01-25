@@ -331,3 +331,5 @@
 : 1643113116:0;python manage.py runserver
 : 1643113167:0;ls
 : 1643113182:0;git commit -am "Set up authentication endpoint"
+: 1643114177:0;python manage.py runserver
+: 1643114668:0;git commit -am "Register users"
