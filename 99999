@@ -298,3 +298,19 @@
 : 1643032647:0;python manage.py migrate
 : 1643032707:0;python manage.py runserver
 : 1643032782:0;git add .
+: 1643032804:0;git commit -m "Create custom permissions"
+: 1643047856:0;ls
+: 1643047862:0;clear
+: 1643047865:0;cd ~
+: 1643109956:0;ls
+: 1643109961:0;git log --oneline
+: 1643109963:0;clear
+: 1643109964:0;ls
+: 1643110014:0;ls -a
+: 1643110024:0;vim .gitignore
+: 1643110103:0;ls
+: 1643110141:0;git remote add origin https://github.com/Mogbeyi/StoreFront.git
+: 1643110149:0;git branch -M
+: 1643110160:0;git push -u origin main
+: 1643110173:0;git diff
+: 1643110178:0;git add .
