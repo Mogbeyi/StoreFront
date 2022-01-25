@@ -333,3 +333,7 @@
 : 1643113182:0;git commit -am "Set up authentication endpoint"
 : 1643114177:0;python manage.py runserver
 : 1643114668:0;git commit -am "Register users"
+: 1643119879:0;clear
+: 1643119884:0;git status -s
+: 1643119887:0;git diff
+: 1643119907:0;git commit -am "Create customer profile"
