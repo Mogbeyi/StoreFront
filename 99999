@@ -314,3 +314,20 @@
 : 1643110160:0;git push -u origin main
 : 1643110173:0;git diff
 : 1643110178:0;git add .
+: 1643110218:0;git commit -m "Update .gitignore file"
+: 1643110224:0;git push origin master
+: 1643110231:0;clear
+: 1643110237:0;git status -s
+: 1643110242:0;git status
+: 1643110244:0;clear
+: 1643110246:0;git diff
+: 1643111288:0;pip --version
+: 1643111295:0;pipenv
+: 1643111299:0;clear
+: 1643111329:0;pipenv install djoser
+: 1643111685:0;pipenv install djangorestframework_simplejwt\
+
+: 1643113112:0;clear
+: 1643113116:0;python manage.py runserver
+: 1643113167:0;ls
+: 1643113182:0;git commit -am "Set up authentication endpoint"
