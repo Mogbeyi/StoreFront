@@ -26,6 +26,8 @@ from .serializers import (
     CustomerSerializer,
 )
 
+import pprint
+
 
 class ProductViewSet(ModelViewSet):
     queryset = Product.objects.all()

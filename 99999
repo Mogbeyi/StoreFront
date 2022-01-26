@@ -337,3 +337,38 @@
 : 1643119884:0;git status -s
 : 1643119887:0;git diff
 : 1643119907:0;git commit -am "Create customer profile"
+: 1643119913:0;git push
+: 1643119927:0;ls
+: 1643119944:0;git push origin master
+: 1643119955:0;git branch
+: 1643119960:0;clear
+: 1643146973:0;git log --oneline
+: 1643147114:0;git log --oneline >> git.txt
+: 1643147116:0;vim git.txt
+: 1643147128:0;rm git.txt
+: 1643147132:0;git diff
+: 1643147136:0;clear
+: 1643147205:0;ls
+: 1643186638:0;clear
+: 1643186638:0;ls
+: 1643186642:0;python shell
+: 1643186650:0;pipenv shell
+: 1643186654:0;clear
+: 1643186677:0;python manage.py runserver
+: 1643187324:0;clear
+: 1643187333:0;python manage.py runserver
+: 1643187435:0;clear
+: 1643187440:0;python manage.py runserver
+: 1643187516:0;clear
+: 1643187521:0;python manage.py runserver
+: 1643187824:0;clear
+: 1643187828:0;python manage.py runserver
+: 1643188264:0;clear
+: 1643188269:0;python manage.py runserver
+: 1643208948:0;clear
+: 1643208954:0;git log --oneline
+: 1643209009:0;git show 7dc6da4
+: 1643209021:0;clear
+: 1643209609:0;python manage.py runserver
+: 1643210030:0;git diff
+: 1643210047:0;git add .
