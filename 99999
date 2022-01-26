@@ -372,3 +372,9 @@
 : 1643209609:0;python manage.py runserver
 : 1643210030:0;git diff
 : 1643210047:0;git add .
+: 1643210055:0;git commit -m "Log in users"
+: 1643210058:0;git push
+: 1643210063:0;git push master
+: 1643210068:0;git push origin master
+: 1643210073:0;clear
+: 1643211868:0;git commit -am "Get the current user"
