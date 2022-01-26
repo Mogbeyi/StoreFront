@@ -378,3 +378,4 @@
 : 1643210068:0;git push origin master
 : 1643210073:0;clear
 : 1643211868:0;git commit -am "Get the current user"
+: 1643221974:0;git commit -am "Getting current users profile"
