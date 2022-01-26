@@ -379,3 +379,6 @@
 : 1643210073:0;clear
 : 1643211868:0;git commit -am "Get the current user"
 : 1643221974:0;git commit -am "Getting current users profile"
+: 1643223350:0;ls
+: 1643223353:0;black .
+: 1643223372:0;git commit -am "Apply  permissions"

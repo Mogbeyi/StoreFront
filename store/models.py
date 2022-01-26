@@ -94,9 +94,7 @@ class Order(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.PROTECT)
 
     class Meta:
-        permissions = [
-            ('cancel_order', 'Can cancel order')
-        ]
+        permissions = [("cancel_order", "Can cancel order")]
 
 
 class OrderItem(models.Model):
@@ -122,7 +120,7 @@ class Cart(models.Model):
 class CartItem(models.Model):
     cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name="items")
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    quantity = models.PositiveSmallIntegerField(validators=[MinValueValidator(1 )])
+    quantity = models.PositiveSmallIntegerField(validators=[MinValueValidator(1)])
 
     class Meta:
         unique_together = [["cart", "product"]]
