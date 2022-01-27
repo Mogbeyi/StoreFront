@@ -388,3 +388,9 @@
 : 1643237047:0;git log --oneline
 : 1643237050:0;clear
 : 1643238136:0;git commit -am "Apply custom permissions"
+: 1643319084:0;git log --oneline
+: 1643319088:0;clear
+: 1643320549:0;git diff
+: 1643320563:0;git add .
+: 1643320565:0;git diff
+: 1643320577:0;git commit -am "Apply model permissions"
