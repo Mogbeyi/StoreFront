@@ -14,7 +14,7 @@ from rest_framework.mixins import (
     UpdateModelMixin,
 )
 from .pagination import DefaultPagination
-from .permissions import IsAdminOrReadOnly
+from .permissions import IsAdminOrReadOnly, ViewCustomerHistoryPermission
 
 from .filters import ProductFilter
 from .models import Collection, OrderItem, Product, Review, Cart, CartItem, Customer
@@ -112,7 +112,7 @@ class CartItemViewSet(ModelViewSet):
         )
 
 
-class CustomerViewSet(ModelViewSet):
+class  CustomerViewSet(ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
     permission_classes = [IsAdminUser]
@@ -134,3 +134,7 @@ class CustomerViewSet(ModelViewSet):
             serializer.is_valid(raise_exception=True)
             serializer.save()
             return Response(serializer.data)
+
+    @action(detail=True, permission_classes=[ViewCustomerHistoryPermission])
+    def history(self, request, pk):
+        return Response('ok')

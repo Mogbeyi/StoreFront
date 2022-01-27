@@ -394,3 +394,8 @@
 : 1643320563:0;git add .
 : 1643320565:0;git diff
 : 1643320577:0;git commit -am "Apply model permissions"
+: 1643323324:0;python manage.py makemigrations
+: 1643323341:0;python manage.py makemigraitions
+: 1643323350:0;python manage.py makemigrations
+: 1643323363:0;python manage.py migrate
+: 1643323868:0;git add .
