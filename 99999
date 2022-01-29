@@ -405,3 +405,9 @@
 : 1643327830:0;cd ../../..
 : 1643412124:0;python manage.py runserver
 : 1643415481:0;git add .
+: 1643415510:0;git commit -m "Implement feature to get all orders"
+: 1643415513:0;git push
+: 1643415518:0;git push origin master
+: 1643415523:0;clear
+: 1643415686:0;python manage.py runserver
+: 1643417145:0;git commit -am "Apply permissions to order end point"
