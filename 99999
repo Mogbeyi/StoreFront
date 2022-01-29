@@ -399,3 +399,9 @@
 : 1643323350:0;python manage.py makemigrations
 : 1643323363:0;python manage.py migrate
 : 1643323868:0;git add .
+: 1643323879:0;git commit -m "Apply custom model permissions"
+: 1643323881:0;clear
+: 1643327822:0;ls
+: 1643327830:0;cd ../../..
+: 1643412124:0;python manage.py runserver
+: 1643415481:0;git add .
