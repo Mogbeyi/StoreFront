@@ -17,7 +17,16 @@ from .pagination import DefaultPagination
 from .permissions import IsAdminOrReadOnly, ViewCustomerHistoryPermission
 
 from .filters import ProductFilter
-from .models import Collection, OrderItem, Product, Review, Cart, CartItem, Customer, Order
+from .models import (
+    Collection,
+    OrderItem,
+    Product,
+    Review,
+    Cart,
+    CartItem,
+    Customer,
+    Order,
+)
 from .serializers import (
     CollectionSerializer,
     ProductSerializer,
@@ -28,8 +37,9 @@ from .serializers import (
     UpdateCartItemSerializer,
     CustomerSerializer,
     OrderSerializer,
-    CreateOrderSerializer
+    CreateOrderSerializer,
 )
+
 
 class ProductViewSet(ModelViewSet):
     queryset = Product.objects.all()
@@ -104,7 +114,7 @@ class CartItemViewSet(ModelViewSet):
             return UpdateCartItemSerializer
         return CartItemSerializer
 
-    #pass cart_id to Cart item serializer
+    # pass cart_id to Cart item serializer
     def get_serializer_context(self):
         return {"cart_id": self.kwargs["cart_pk"]}
 
@@ -114,7 +124,7 @@ class CartItemViewSet(ModelViewSet):
         )
 
 
-class  CustomerViewSet(ModelViewSet):
+class CustomerViewSet(ModelViewSet):
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
     permission_classes = [IsAdminUser]
@@ -139,25 +149,27 @@ class  CustomerViewSet(ModelViewSet):
 
     @action(detail=True, permission_classes=[ViewCustomerHistoryPermission])
     def history(self, request, pk):
-        return Response('ok')
+        return Response("ok")
+
 
 class OrderViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
 
     def get_serializer_class(self):
-        if self.request.method == 'POST':
+        if self.request.method == "POST":
             return CreateOrderSerializer
         return OrderSerializer
 
     def get_serializer_context(self):
-        return {'user_id': self.request.user.id}
-
+        return {"user_id": self.request.user.id}
 
     def get_queryset(self):
         user = self.request.user
 
         if user.is_staff:
             return Order.objects.all()
-        
-        (customer_id, created) = Customer.objects.only('id').get_or_create(user_id=user.id)
+
+        (customer_id, created) = Customer.objects.only("id").get_or_create(
+            user_id=user.id
+        )
         return Order.objects.filter(customer_id=customer_id)

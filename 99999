@@ -427,3 +427,8 @@
 : 1643640397:0;git remote show origin
 : 1643640399:0;ls
 : 1643642389:0;git add .
+: 1643642406:0;git commit -m "Create an order"
+: 1643642408:0;clear
+: 1643644824:0;ls
+: 1643644827:0;black .
+: 1643644860:0;git commit -am "Create order items"
