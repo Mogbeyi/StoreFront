@@ -432,3 +432,6 @@
 : 1643644824:0;ls
 : 1643644827:0;black .
 : 1643644860:0;git commit -am "Create order items"
+: 1643652286:0;git status -s
+: 1643652291:0;git log --oneline
+: 1643654626:0;git commit -am "Return the created order"
