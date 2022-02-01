@@ -435,3 +435,5 @@
 : 1643652286:0;git status -s
 : 1643652291:0;git log --oneline
 : 1643654626:0;git commit -am "Return the created order"
+: 1643716236:0;python manage.py runserver
+: 1643716338:0;git commit -am "Add data validation for invalid and empty carts when creating an order"
